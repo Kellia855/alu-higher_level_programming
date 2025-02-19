@@ -10,4 +10,4 @@ if __name__ == "__main__":
     else:
         print("{} {}".format(count, arg1 if count == 1 else arg2))
         for i in range(1, len(argv)):
-            print("{}: {}".format(i, argv[i]))i
+            print("{}: {}".format(i, argv[i]))
