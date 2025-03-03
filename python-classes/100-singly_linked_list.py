@@ -1,9 +1,13 @@
 #!/usr/bin/python3
+"""
+This module defines a Node class for a singly linked list 
+and a SinglyLinkedList class that manages sorted insertion.
+"""
 
-"""this module defines a singly linked list and its node class."""
 
 class Node:
     """Defines a node of a singly linked list."""
+
     def __init__(self, data, next_node=None):
         """Initializes a node with data and next_node."""
         self.data = data
@@ -36,6 +40,7 @@ class Node:
 
 class SinglyLinkedList:
     """Defines a singly linked list."""
+
     def __init__(self):
         """Initializes an empty singly linked list."""
         self.__head = None
@@ -57,7 +62,8 @@ class SinglyLinkedList:
             self.__head = new_node
         else:
             current = self.__head
-            while current.next_node is not None and current.next_node.data < value:
+            while (current.next_node is not None and
+                   current.next_node.data < value):
                 current = current.next_node
             new_node.next_node = current.next_node
             current.next_node = new_node
