@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines a Node class for a singly linked list 
+This module defines a Node class for a singly linked list
 and a SinglyLinkedList class that manages sorted insertion.
 """
 
