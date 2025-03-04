@@ -1,13 +1,15 @@
 #!/usr/bin/python3
+
 """
 This module defines a Square class that represents a square shape.
 It includes methods for setting and getting size, calculating area,
 and comparing squares based on their area.
 """
 
+
 class Square:
     """A class that defines a square by its size."""
-    
+
     def __init__(self, size=0):
         """Initialize the square with an optional size (default is 0)."""
         self.size = size
