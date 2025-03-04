@@ -57,4 +57,3 @@ class Square:
         """Check if this square is larger or equal to another based on area.
         """
         return self.area() >= other.area()
-
