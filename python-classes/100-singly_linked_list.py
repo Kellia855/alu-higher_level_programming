@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """
-This module defines a Node class for a singly linked list
-and a SinglyLinkedList class that manages sorted insertion.
+This module implements a singly linked list.
+
+It contains:
+- The Node class, which represents a node in the list.
+- The SinglyLinkedList class, which implements a sorted singly linked list.
 """
 
 
@@ -66,4 +69,5 @@ class SinglyLinkedList:
                    current.next_node.data < value):
                 current = current.next_node
             new_node.next_node = current.next_node
-            current.next_node = new_node/usr/
+            current.next_node = new_node
+
