@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-
 """
 This module defines a Square class that represents a square.
 
 The Square class provides methods to calculate the area of the square
 and print it with a specified position.
 """
+
 
 class Square:
     """Defines a square."""
@@ -38,7 +38,7 @@ class Square:
     def position(self, value):
         """Sets the position, ensuring it is a tuple of 2 positive integers."""
         if (not isinstance(value, tuple) or len(value) != 2 or
-                not all(isinstance(i, int) and i >= 0 for i in value)):
+            not all(isinstance(i, int) and i >= 0 for i in value)):
             raise TypeError("position must be a tuple of 2 positive integer")
         self.__position = value
 
@@ -61,5 +61,6 @@ class Square:
             return ""
         result = "\n" * self.__position[1]
         result += "\n".join(" " * self.__position[0] + "#" * self.__size
-                             for _ in range(self.__size))
+                              for _ in range(self.__size))
         return result
+
