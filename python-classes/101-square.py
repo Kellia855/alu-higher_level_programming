@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+"""
+This module defines a Square class that represents a square.
+
+The Square class provides methods to calculate the area of the square
+and print it with a specified position.
+"""
+
 class Square:
     """Defines a square."""
 
