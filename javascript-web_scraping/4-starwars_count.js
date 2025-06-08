@@ -1,4 +1,5 @@
-t request = require('request');
+!#/usr/bin/node
+const request = require('request');
 let nFilms = 0;
 
 request(process.argv[2], function (err, response, body) {
